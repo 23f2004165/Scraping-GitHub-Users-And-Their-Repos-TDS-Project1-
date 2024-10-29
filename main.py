@@ -132,7 +132,7 @@ class GitHubScraper:
         return repos[:max_repos]
 
 def main():
-    token = "my_token"
+    token = "my_token" #Change 'my_token' to your GitHub token
     scraper = GitHubScraper(token)
     users = scraper.search_users(location='Sydney', min_followers=100)
     users_df = pd.DataFrame(users)
